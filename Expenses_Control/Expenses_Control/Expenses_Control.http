@@ -1,0 +1,6 @@
+@Expenses_Control_HostAddress = http://localhost:5142
+
+GET {{Expenses_Control_HostAddress}}/api/transactions
+Content-Type: application/json
+
+
