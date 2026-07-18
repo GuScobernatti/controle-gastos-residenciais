@@ -47,33 +47,40 @@ A aplicação atende aos requisitos essenciais de um controle de despesas:
 ### 1. Clonando o repositório
 
 ```bash
-git clone [https://github.com/GuScobernatti/controle-gastos-residenciais.git](https://github.com/GuScobernatti/controle-gastos-residenciais.git)
+git clone https://github.com/GuScobernatti/controle-gastos-residenciais.git
 cd controle-gastos-residenciais
 ```
 
 ### 2. Rodando o Back-end (API)
 
-Navegue até a pasta do projeto .NET:
+Você pode executar a API de duas formas diferentes, partindo da raiz do projeto (`controle-gastos-residenciais`):
+
+**Opção A: Executar direto pelo Terminal**
+Navegue até a pasta interna do projeto e rode os comandos:
 
 ```bash
-cd Expenses_Control
-```
-
-Restaure os pacotes e execute a aplicação:
-
-```bash
+cd Expenses_Control/Expenses_Control
 dotnet build
 dotnet run
 ```
 
 A API estará rodando (geralmente em https://localhost:7125 ou porta similar). O banco de dados SQLite (controle_gastos.db) será utilizado automaticamente.
 
+**Opção B: Abrir e executar pelo Visual Studio**
+Para acessar o código-fonte direto na IDE, navegue até a pasta da Solução e abra o arquivo:
+```bash
+cd Expenses_Control
+start Expenses_Control.slnx
+```
+Com o Visual Studio aberto, basta apertar F5 para rodar o projeto.
+
 ### 3. Rodando o Front-end (React + TypeScript)
 
-Abra um novo terminal e navegue até a pasta do Front-end:
+Para garantir que o ambiente Front-end rode de forma isolada, abra a pasta diretamente no VS Code:
 
 ```bash
-cd projetoControelGastosTesteEstagio
+cd projetoControleGastos
+code .
 ```
 
 Instale as dependências e inicie o servidor Vite:
