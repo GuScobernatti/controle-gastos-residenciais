@@ -47,7 +47,7 @@ A aplicação atende aos requisitos essenciais de um controle de despesas:
 ### 1. Clonando o repositório
 
 ```bash
-git clone [https://github.com/GuScobernatti/controle-gastos-residenciais.git](https://github.com/GuScobernatti/controle-gastos-residenciais.git)
+git clone https://github.com/GuScobernatti/controle-gastos-residenciais.git
 cd controle-gastos-residenciais
 ```
 
