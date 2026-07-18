@@ -56,7 +56,7 @@ cd controle-gastos-residenciais
 Navegue até a pasta do projeto .NET:
 
 ```bash
-cd Expenses_Control
+cd Expenses_Control/Expenses_Control
 ```
 
 Restaure os pacotes e execute a aplicação:
@@ -68,12 +68,20 @@ dotnet run
 
 A API estará rodando (geralmente em https://localhost:7125 ou porta similar). O banco de dados SQLite (controle_gastos.db) será utilizado automaticamente.
 
+Para acessar o código fonte:
+```bash
+cd Expenses_Control
+start Expenses_Control.slnx
+```
+Se quiser executar o projeto por aí, basta apenas clicar no f5.
+
 ### 3. Rodando o Front-end (React + TypeScript)
 
-Abra um novo terminal e navegue até a pasta do Front-end:
+Para garantir que o ambiente Front-end rode de forma isolada, abra a pasta diretamente no VS Code:
 
 ```bash
-cd projetoControelGastosTesteEstagio
+cd projetoControleGastos
+code .
 ```
 
 Instale as dependências e inicie o servidor Vite:
